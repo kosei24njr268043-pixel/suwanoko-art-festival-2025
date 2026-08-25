@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="諏訪ノ湖芸術祭2025 実施報告書 Web版">
+  <title>諏訪ノ湖芸術祭2025｜実施報告書</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 最初に24ページ目を画面全体で表示 -->
+  <section class="hero-page" aria-label="メインビジュアル">
+    <img src="images/page-24.jpg" alt="諏訪ノ湖芸術祭2025 実施報告書 24ページ目">
+  </section>
+
+<header class="site-header">
+  <div>
+    <p class="eyebrow">BEN-TEN</p>
+    <h1>諏訪ノ湖芸術祭2025</h1>
+    <p class="subtitle">実施報告書 | Web Edition</p>
+  </div>
+</header>
+
+  <main>
+
+    <!-- 指定7ページ：自動切り替えハイライト -->
+    <section class="autoplay-section" aria-label="芸術祭ハイライト">
+      <div class="section-heading autoplay-heading">
+        <span>HIGHLIGHT</span>
+        <h2>諏訪ノ湖芸術祭2025</h2>
+        <p>会場の様子を自動でご紹介します。</p>
+      </div>
+
+      <div class="autoplay-stage" id="autoplayStage">
+  <img id="autoplayImage" class="autoplay-image" src="" alt="諏訪ノ湖芸術祭2025 会場の様子">
+
+  <button class="autoplay-prev" id="autoplayPrev" aria-label="前の画像">←</button>
+  <button class="autoplay-next" id="autoplayNext" aria-label="次の画像">→</button>
+
+  <div class="autoplay-meta">
+    <span id="autoplayPage">PAGE 08</span>
+    <span class="autoplay-progress"><i id="autoplayProgress"></i></span>
+  </div>
+</div>
+    </section>
+
+
+    <!-- 1〜6ページ：横スクロール -->
+    <section class="horizontal-section" aria-label="1〜6ページ">
+      <div class="section-heading">
+        <span>01 — 06</span>
+        <h2>実施報告書</h2>
+        <p>左右にスクロールしてページをご覧ください。</p>
+      </div>
+      <div class="horizontal-track" id="horizontalTrack"></div>
+    </section>
+
+
+    <!-- 7〜25ページ：13・24を除外。すべて通常スクロール -->
+    <section class="report-section" aria-label="7〜25ページ">
+      <div class="section-heading report-heading">
+        <span>07 — 25</span>
+        <h2>各会場の様子・記録</h2>
+        <p>スクロールしてページをご覧ください。</p>
+      </div>
+      <div id="reportFlow"></div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="closeLightbox" aria-label="閉じる">×</button>
+    <img id="lightboxImage" src="" alt="報告書ページの拡大表示">
+  </div>
+
+  <footer>
+    <p>© BEN-TEN｜諏訪ノ湖芸術祭2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
